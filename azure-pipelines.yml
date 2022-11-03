@@ -1,0 +1,17 @@
+- task: SOOS-Security-Analysis@0
+  displayName: Security Analysis
+  inputs:
+    apiKey: <SOOS_API_KEY>
+    clientId: <SOOS_CLIENT_ID>
+    scanType: 'SCA'
+    projectName: <PROJECT_NAME> # The name of the project. Defaults to 'Build.Repository.Name'.
+    #projectPath: $(Build.SourcesDirectory) # The relative path to the project root. Defaults to 'Build.SourcesDirectory'.
+    #branch: $(Build.SourceBranch) # The name of the branch. Defaults to 'System.PullRequest.SourceBranch' when available, otherwise 'Build.SourceBranchName'.
+    #branchUri: $(Build.Repository.Uri) # The link to the current branch. Defaults to 'Build.Repository.Uri'.
+    #commitHash: $(Build.SourceVersion) # The commit hash associated with the code being analyzed. Defaults to 'Build.SourceVersion'.
+    #buildVersion: # The current build version.
+    #buildUri: $(Build.BuildUri) # The link to the current build. Defaults to 'Build.BuildUri'.
+    #excludedDirectories: # A list of directories, delimited by comma, to exclude when searching for manifest files.
+    #waitForScan: true # Recommended if the build should fail when issues are detected
+    #outputFormat: 'SARIF' # After the scan finishes, log the output to the console.
+    #verbose: true # Enable for verbose logging
